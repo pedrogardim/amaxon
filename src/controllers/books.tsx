@@ -1,6 +1,6 @@
-import { db } from "../db";
+import { db } from "..";
 import { BookGrid } from "../components/BookGrid";
-import { Book } from "../types/books";
+import { Book } from "../../types/books";
 
 export const getAllBooks = () => {
   const booksList = db.query("select * from books;").all() as Book[];
